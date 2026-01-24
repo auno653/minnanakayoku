@@ -55,7 +55,7 @@
                 var obj = $("#table_int");
 
                 obj.html("");
-                $("<thead class='table-dark'><tr><th>Level</th><th>難易度表</th><th>Title</th><th>Artist</th><th>本体</th><th>差分</th><th>コメント</th></tr></thead><tbody>")
+                $("<thead class='table-dark'><tr><th>Level</th><th>他表</th><th>Title</th><th>Artist</th><th>本体</th><th>差分</th><th>コメント</th></tr></thead><tbody>")
                     .appendTo(obj);
                 var obj_sep = null;
                 for (var i = 0; i < info.length; i++) {
@@ -74,10 +74,10 @@
                     var str = $("<tr></tr>");
 
                     // Level
-                    $("<td width='5%'>" + mark + x + "</td>").appendTo(str);
+                    $("<td width='7%'>" + mark + x + "</td>").appendTo(str);
 
                     // Title
-                    $("<td width='5%'>" + "<font color ='red'>" + info[i].table + "</font></td>").appendTo(str);
+                    $("<td width='7%'>" + "<font color ='red'>" + info[i].table + "</font></td>").appendTo(str);
                     $("<td width='30%'>" +
                         "<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=" + info[
                             i]

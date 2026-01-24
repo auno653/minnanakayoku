@@ -88,7 +88,7 @@
                     $("<td width='5%'><a href='" + info[i].url + "' target='_blank'>■</a></td>").appendTo(str);
                     $("<td width='5%'><a href='" + info[i].url_diff + "' target='_blank'>■</a></td>").appendTo(str);
                     // Comment
-                    $("<td width='25%'>" + "<font color ='red'><b>" + info[i].table + "</b></font>" + info[i].comment + "</td>").appendTo(str);
+                    $("<td width='25%'>" + info[i].comment + "</td>").appendTo(str);
                     str.appendTo(obj);
                     count++;
 

@@ -81,6 +81,10 @@
 
                     var str = $("<tr></tr>");
 
+                    // NEW譜面ハイライト（new <= 19）
+                    if (info[i].new !== undefined && info[i].new <= 19) {
+                        str.addClass("table-warning"); // 色はお好みで
+                    }
                     // Level
                     $("<td width='7%'>" + mark + x + "</td>").appendTo(str);
 

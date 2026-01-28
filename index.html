@@ -13,6 +13,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
     </script>
+    <style>
+.level-cell {
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+}
+</style>
 </head>
 
 <body>
@@ -89,7 +96,7 @@
                         str.addClass("table-warning"); // 色はお好みで
                     }
                     // Level
-                    $("<td width='7%'>" + mark + x + "</td>").appendTo(str);
+                    $("<td class='level-cell' width='7%'>" + mark + x + "</td>").appendTo(str);
 
                     // Title
                     $("<td width='7%'>" + "<font color ='red'>" + info[i].table + "</font></td>").appendTo(str);

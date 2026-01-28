@@ -18,12 +18,6 @@
     font-weight: bold;
     white-space: nowrap;
 }
-.level-sep td {
-    background-color: #212529;
-    color: #fff;
-    font-size: 1.1em;
-    text-align: center;
-}
 </style>
 </head>
 
@@ -87,7 +81,7 @@
                             obj_sep.html("<td colspan='7'>" + "<b>" + mark + x + " (" + count +
                                 "譜面)</b></td>");
                         }
-                        obj_sep = $("<tr class='level-sep' id='" +
+                        obj_sep = $("<tr class='table-dark' style='text-align:center' id='" +
                             mark + info[i].level + "'></tr>");
                         obj_sep.appendTo(obj);
                         count = 0;

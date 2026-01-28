@@ -19,6 +19,8 @@
     white-space: nowrap;
 }
 </style>
+<link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
@@ -108,14 +110,18 @@
                     $("<td width='25%'>" + info[i].artist + "</td>").appendTo(str);
 // 本体URL
 if (info[i].url && info[i].url.trim() !== "") {
-    $("<td width='5%'><a href='" + info[i].url + "' target='_blank'>■</a></td>").appendTo(str);
+    $("<td width='5%' class='text-center'>" +
+      "<a href='" + info[i].url + "' target='_blank' title='本体'>" +
+      "<i class='fa-solid fa-download'></i></a></td>").appendTo(str);
 } else {
     $("<td width='5%'></td>").appendTo(str);
 }
 
 // 差分URL
 if (info[i].url_diff && info[i].url_diff.trim() !== "") {
-    $("<td width='5%'><a href='" + info[i].url_diff + "' target='_blank'>■</a></td>").appendTo(str);
+    $("<td width='5%' class='text-center'>" +
+      "<a href='" + info[i].url_diff + "' target='_blank' title='差分'>" +
+      "<i class='fa-solid fa-download'></i></a></td>").appendTo(str);
 } else {
     $("<td width='5%'></td>").appendTo(str);
 }
